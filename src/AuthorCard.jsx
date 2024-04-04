@@ -7,7 +7,7 @@ const AuthorCard = ({ author }) => {
   const handleMouseEnter = () => {
     setTimeout(() => {
       setShowDescription(true);
-    }, 3000);
+    }, 1000);
   };
 
   const handleMouseLeave = () => {
