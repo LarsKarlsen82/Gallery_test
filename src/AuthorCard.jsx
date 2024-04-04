@@ -5,10 +5,9 @@ const AuthorCard = ({ author }) => {
   const [showDescription, setShowDescription] = useState(false);
 
   const handleMouseEnter = () => {
-    // Show the title initially
     setTimeout(() => {
       setShowDescription(true);
-    }, 2000); // Show description after 3 seconds
+    }, 3000);
   };
 
   const handleMouseLeave = () => {
@@ -22,7 +21,7 @@ const AuthorCard = ({ author }) => {
       onMouseLeave={handleMouseLeave}
     >
       <TextContainer>
-        <Title isVisible={!showDescription}>{author.name}</Title>
+        <Title>{author.name}</Title>
         <Subtitle isVisible={showDescription}>{author.description}</Subtitle>
       </TextContainer>
     </Wrapper>
@@ -57,7 +56,7 @@ const TextContainer = styled.div`
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align items near the top */
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -75,8 +74,7 @@ const Title = styled.p`
   font-weight: bold;
   color: #000000;
   margin: 0px;
-  visibility: ${(props) => (props.isVisible ? "visible" : "hidden")};
-  transition: visibility 0.3s ease-in-out;
+  margin-bottom: 20px; /* Add margin to separate from top */
 `;
 
 const Subtitle = styled.p`
