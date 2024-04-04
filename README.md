@@ -1,8 +1,23 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm pakker installeret: 
+- slick-carousel
+- styled-components
+- react-router-dom
+- react-icons
+- vite 
 
-Currently, two official plugins are available:
+API: 
+Brugte contentful.com
+Oprettet:
+Content model : Gallery
+Content: Forskellige mapper til forskellige billeder som skal bruges i galleri
+Media: Uploaded de billeder der skal bruges
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+Kilde: 
+youtube
+google
+chat gpt
+mine repositories
