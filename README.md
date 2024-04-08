@@ -6,6 +6,7 @@ npm pakker installeret:
 - react-router-dom
 - react-icons
 - vite 
+- contentful
 
 API: 
 Brugte contentful.com
@@ -21,3 +22,5 @@ youtube
 google
 chat gpt
 mine repositories
+
+https://codesandbox.io/p/sandbox/contentful-api-3lc0j?file=%2Fsrc%2FuseContentful.js%3A10%2C35

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <StyledFooter>
-      <div className="container mx-auto flex flex-wrap justify-between">
+      <div className="container mx-auto flex flex-wrap justify-between items-center h-full">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 className="text-2xl font-bold mb-4">Lars Karlsen</h3>
         </div>
@@ -46,10 +46,10 @@ const Footer = () => {
             </a> */}
           </SocialMediaLinks>
         </div>
-        <Copyright>
-          <p>&copy; {new Date().getFullYear()} Lars Karlsen. All Rights Reserved.</p>
-        </Copyright>
       </div>
+      <Copyright>
+        <p>&copy; {new Date().getFullYear()} Lars Karlsen. All Rights Reserved.</p>
+      </Copyright>
     </StyledFooter>
   );
 };
@@ -57,7 +57,12 @@ const Footer = () => {
 const StyledFooter = styled.footer`
   background-color: #2d3748;
   color: #fff;
-  padding: 2rem 1rem;
+  padding-left: 3.4rem;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 `;
 
 const SocialMediaLinks = styled.div`
@@ -79,9 +84,9 @@ const SocialMediaLinks = styled.div`
 
 const Copyright = styled.div`
   width: 100%;
-  margin-top: 2rem;
   text-align: center;
   color: #ccc;
+  flex-shrink: 0;
 `;
 
 export default Footer;

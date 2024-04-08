@@ -2,10 +2,11 @@ import { createClient } from "contentful";
 
 const useContentful = () => {
   const client = createClient({
-    space: "v2qphgxvkqfe",
-    accessToken: "_EK4B8HAXXZuDT0VWxgLneyUwsSJHsxoDxf9l_Id5Fc",
+    space: import.meta.env.VITE_PUBLIC_SPACE_ID,
+    accessToken: import.meta.env.VITE_PUBLIC_ACCESS_TOKEN,
     host: "preview.contentful.com"
   });
+
 
   const getAuthors = async () => {
     try {
